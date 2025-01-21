@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -75,13 +78,43 @@ ul{
     font-weight: 600;
     font-family: var(--primary-font);
 }
+.menu-icon{
+    display: none;
+}
 
 
         /* header section ends */
         /* header section responsive */
-@media only screen and (min-width:576px) and (max-width:767px){
-
-}
+        @media(max-width:576px){
+            .menu{
+                display: none;
+            }
+            .header-button{
+                display: none;
+            }
+            
+            .menu-icon{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                font-size: 24px;
+            }
+            .logo-menu-button{
+                gap: 400px;
+                max-width: 570px;
+                margin: 12px 0px;
+               
+            }
+            .name{
+                display: none;
+            }
+            body{
+                overflow: hidden;
+            }
+            .display-flex{
+                justify-content: space-evenly;
+            }
+        }
 
         /* main section starts  */
     
