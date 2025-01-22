@@ -215,7 +215,10 @@ ul{
 
         }
         @media(max-width:992px){
-
+            .hero-section{
+                flex-direction: column-reverse;
+                margin: 0 auto;
+            }
         }
         @media(max-width:576px){
             .hero-section{
@@ -374,8 +377,12 @@ ul{
             }
         }
         @media(max-width:576px){
+        
         .standard-curriculam{
             flex-direction: column;
+        }
+        .double-arrow{
+            display: none;
         }
         }
         /* story section starts */
@@ -493,6 +500,7 @@ ul{
             width: 463px;
             height:76px;
             padding:58px 36px 48px 36px;
+            line-height: 38px;
         }
         .story-description{
             font-family: var(--secondary-font);
@@ -500,6 +508,7 @@ ul{
             font-weight: 500;
             padding:48px 68px 34px 38px;
             display: block;
+            line-height: 29px;
         }
         .small-story{
             font-family: var(--primary-font);
@@ -650,6 +659,9 @@ ul{
         }
 
         @media(max-width:576px){
+            .stories-title{
+                margin-top: 20px;
+            }
             .gallery{
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(3,1fr);
@@ -788,6 +800,34 @@ ul{
         }
         /* footer section ends */
         /* footer section responsive */
+        @media(max-width:1068px){
+            .footer{
+                gap: 0;
+            }
+
+        }
+
+        @media(max-width:992px){
+            .footer{
+                gap: 0;
+            }
+            .footer-right{
+                gap:20px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media(max-width:774px){
+            .social-media{
+                padding-top: 150px;
+            }
+            .footer-icon{
+                flex-direction: column;
+            }
+            .social-head{
+                margin: ;
+            }
+        } 
         @media(max-width:576px){
         .footer{
            display: flex;
@@ -816,6 +856,12 @@ ul{
         }
         .summary{
             width: 357px;
+        }
+        .social-media{
+            padding-top: 0px;
+        }
+        .footer-icon{
+            flex-direction: row;
         }
         
     }
