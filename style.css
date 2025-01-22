@@ -151,7 +151,7 @@ ul{
     }
     .enroll-button{
         width: 200px;
-        height: 50;
+        height: 50px;
         border-radius: 12px;
         border: none;
         padding: 10px;
@@ -305,12 +305,19 @@ ul{
         /* story section starts */
         .story-section{
             width: 100%;
-            background-image: url(./assets/bg.png);
-            background:linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
-            
-            
-           
-            
+            background:linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(./assets/bg.png);    
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+
+        .stories-title{
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            font-family: var(--primary-font);
+            font-size: 46px;
+            font-weight: 700;
         }
         .gallery{
             display: grid;
@@ -351,7 +358,7 @@ ul{
             position: relative;
         }
         .story-button-two{
-            background-color: #05D4DF;
+            background-color: #95B226;
             color:#FFFFFF;
             width: 174px;
             height: 47px;
@@ -367,6 +374,42 @@ ul{
         #box-4{
             position: relative;
         }
+
+        #box-3{
+            position:relative;
+        }
+        .story-button-three{
+            background-color: #5D58F0;
+            color:#FFFFFF;
+            width: 174px;
+            height: 47px;
+            font-family: var(--secondary-font);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 47px;
+            border: none;
+            position: absolute;
+            left:38px;
+            top:50%
+        }
+        #box-5{
+            position: relative;
+        }
+        .story-button-four{
+            background-color: #95B226;
+            color:#FFFFFF;
+            width: 127px;
+            height: 38px;
+            font-family: var(--secondary-font);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 47px;
+            border: none;
+            position: absolute;
+            left:38px;
+            top:53%;
+        }
+
         .story-title{
             font-family: var(--primary-font);
             font-size: 24px;
@@ -388,10 +431,104 @@ ul{
             font-weight: 700;
             padding:43px 50px 33px 34px;
         }
+        .view-all-button{
+            width: 200px;
+            height: 50px;
+            border-radius: 12px;
+            border: none;
+            padding: 10px;
+            background-color: black;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: var(--primary-font);
+            margin: 80px auto 60px;
+            
+        }
+
+        .modify{
+            flex-direction:column;
+        }
         /* story section ends */
         /* curriclam section responsive */
         /* main section ends */
         /* footer section starts */
-    
+        .footer-section{
+            width:100%;
+            height: 519px;
+            background-color: #01ACFD;
+        }
+        .footer{
+            padding-top: 124px;
+            gap: 172px;
+        }
+        .logo-with-name{
+            justify-content: flex-start;
+            gap: 11px;
+        }
+        .kids-education h2{
+            font-family: var(--primary-font);
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #FFFFFF;
+            width: 206px;
+        }
+        .footer-left{
+            display: flex;
+            align-items: flex-start;
+        }
+        .footer-content{
+            gap: 36px;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        .summary{
+            font-family: var(--primary-font);
+            width:400px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+
+        .footer-right{
+            justify-content: center;
+            align-items: center;
+            gap: 143px;
+        }
+        .menu-head{
+            font-family: var(--primary-font);
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+        .footer-menu-list ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .footer-menu-list ul li a{
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 500;
+            
+        }
+
+
+        .social-head{
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+        .social-head{
+            font-family: var(--primary-font);
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .footer-icon{
+            gap: 10px;
+        }
         /* footer section ends */
         /* footer section responsive */
