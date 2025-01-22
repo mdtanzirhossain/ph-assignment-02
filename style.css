@@ -567,7 +567,48 @@ ul{
         }
         /* story section ends */
         /* story section responsive */
-        
+        @media(max-width:1064px){
+            .story-button-three{
+                left:22px;
+                top: 42%;
+            }
+            .story-button-two{
+                left:22px;
+                top:42%;
+            }
+            .story-button-four{
+                left:22px;
+                top:42%;
+        }
+    }
+        @media(max-width:998px){
+            .story-button-three{
+                left:22px;
+                top: 34%;
+            }
+            .story-button-two{
+                left:22px;
+                top:34%;
+            }
+            .story-button-four{
+                left:22px;
+                top:34%;
+        }
+        }
+        @media(max-width:916px){
+            .story-button-three{
+                left:0;
+                top: 26%;
+            }
+            .story-button-two{
+                left:0;
+                top:26%;
+            }
+            .story-button-four{
+                left:0;
+                top:26%;
+        }
+        }
         @media(max-width:768px){
             body{
                 width: 100%;
