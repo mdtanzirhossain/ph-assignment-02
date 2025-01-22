@@ -9,8 +9,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    border: 2px solid red;
+html,body{
+    
     overflow-x: hidden;
     
     
@@ -34,6 +34,11 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+marquee{
+    font-size: 32px;
+    color: #8700FF;
+    font-style: italic;
 }
         /* header section starts*/
 .logo-menu-button{
@@ -362,6 +367,12 @@ ul{
         }
         /* curriculam section ends */
         /* curriclam section responsive */
+        @media(max-width:992px){
+            .standard-curriculam{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
         @media(max-width:576px){
         .standard-curriculam{
             flex-direction: column;
@@ -516,18 +527,62 @@ ul{
         }
         #box-6{
             display: none;
+            position: relative;
+        }
+        .story-button-six{
+            background-color: #5D58F0;
+            color:#FFFFFF;
+            width: 174px;
+            height: 47px;
+            font-family: var(--secondary-font);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 47px;
+            border: none;
+            position: absolute;
+            left:30px;
+            top:40%;
         }
 
         #box-7{
             display: none;
+            position: relative;
+        }
+        .story-button-seven{
+            background-color: #5D58F0;
+            color:#FFFFFF;
+            width: 174px;
+            height: 47px;
+            font-family: var(--secondary-font);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 47px;
+            border: none;
+            position: absolute;
+            left:30px;
+            top:40%;
         }
         /* story section ends */
         /* story section responsive */
+        
         @media(max-width:768px){
             body{
                 width: 100%;
                 overflow-x: hidden;
             }
+            .story-button-three{
+                left:30px;
+                top: 40%;
+            }
+            .story-button-two{
+                left:30px;
+                top:42%;
+            }
+            .story-button-four{
+                left:30px;
+                top:43%;
+            }
+            
 
             .gallery{
                 grid-template-columns: repeat(3,1fr);
@@ -547,6 +602,53 @@ ul{
                 width: 100%;
             }
         }
+        @media(max-width:686px){
+            .story-button-three{
+                left:15px;
+                top: 38%;
+            }
+            .story-button-two{
+                left:15px;
+                top:38%;
+            }
+            .story-button-four{
+                left:15px;
+                top:38%;
+            }
+            .story-button-six{
+                left:15px;
+                top:38%;
+            }
+
+            .story-button-seven{
+                left:15px;
+                top:38%;
+            }
+        }
+        @media(max-width:640px){
+            .story-button-three{
+                left:8px;
+                top: 34%;
+            }
+            .story-button-two{
+                left:8px;
+                top:34%;
+            }
+            .story-button-four{
+                left:8px;
+                top:34%;
+            }
+            .story-button-six{
+                left:8px;
+                top:34%;
+            }
+
+            .story-button-seven{
+                left:8px;
+                top:34%;
+            }
+        }
+
         @media(max-width:576px){
             .gallery{
                 grid-template-columns: repeat(2,1fr);
@@ -558,6 +660,46 @@ ul{
             }
             body{
                 overflow-x: hidden;
+            }
+
+            .story-button-three{
+                width: 122px;
+                height: 22px;
+                font-size: 9px;
+                left:23px;
+                top:52%;
+            }
+            .story-button-two{
+                width: 122px;
+                height: 22px;
+                font-size: 9px;
+                left:23px;
+                top:52%;
+            }
+            .story-button-four{
+                width: 122px;
+                height: 22px;
+                font-size: 9px;
+                left:23px;
+                top:52%;
+            }
+            .story-button-six{
+                width: 122px;
+                height: 22px;
+                font-size: 9px;
+                left:23px;
+                top:52%;
+            }
+
+            .story-button-seven{
+                width: 122px;
+                height: 22px;
+                font-size: 9px;
+                left:23px;
+                top:52%;
+            }
+            .small-story{
+                padding: 43px 50px 33px 24px;
             }
         }
         /* main section ends */
