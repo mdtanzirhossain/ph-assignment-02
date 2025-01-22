@@ -10,10 +10,7 @@
     box-sizing: border-box;
 }
 html,body{
-    
     overflow-x: hidden;
-    
-    
 }
 
 img, div{
@@ -22,7 +19,6 @@ img, div{
 a{
     text-decoration: none;
 }
-
 li{
     list-style: none;
 }
@@ -36,6 +32,7 @@ li{
     align-items: center;
 }
 marquee{
+    margin-top: 40px;
     font-size: 32px;
     color: #8700FF;
     font-style: italic;
@@ -268,7 +265,6 @@ ul{
             flex-direction: column;
             gap: 32px;
             width: 368px;
-            /* height: 478px; */
             border-radius: 19px;
             border:1px solid #DEF5FF;
             padding: 52px 40px;
@@ -278,7 +274,6 @@ ul{
             flex-direction: column;
             gap: 32px;
             width: 368px;
-            /* height: 478px; */
             border-radius: 19px;
             border:1px solid #DEF5FF;
             padding: 52px 40px;
@@ -288,7 +283,6 @@ ul{
             flex-direction: column;
             gap: 32px;
             width: 368px;
-            /* height: 478px; */
             border-radius: 19px;
             border:1px solid #DEF5FF;
             padding: 52px 40px;
@@ -407,7 +401,7 @@ ul{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
             grid-gap:17px;
-            /* border: 2px solid black; */
+            
         }
         .box{
             border-radius: 16px;
