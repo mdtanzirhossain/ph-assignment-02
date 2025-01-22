@@ -190,6 +190,28 @@ ul{
     }
         /* hero section ends */
         /* hero section responsive */
+        @media(max-width:1164px){
+         .hero-section{
+            gap:0;
+            
+         }
+
+         .hero-left{
+            padding-left: 40px;
+         }
+         .hero-description{
+            width: 500px;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .hero-right{
+            padding-right: 40px;
+        }
+
+        }
+        @media(max-width:992px){
+
+        }
         @media(max-width:576px){
             .hero-section{
                 flex-direction: column-reverse;
@@ -199,16 +221,20 @@ ul{
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                width: 500px;
-
-                
+                width: 400px; 
+                padding-left: 0;
+                padding-top: 20px; 
+            }
+            .hero-right{
+                padding-right: 10px;
             }
             .hero-description{
                 
                 width: 350px;
-                height:120px;
+                height:60px;
                 font-size: 14px;
                 font-weight: 500;
+                
                 
             }
             .hero-title{
@@ -219,6 +245,8 @@ ul{
             .orange{
                 padding: 30px;
             }
+            
+
         }
         /* curriculam section starts */
         .curriculam{
